@@ -1,0 +1,116 @@
+article h2
+{
+    color: green;
+}
+
+article>h2
+{
+    text-decoration: underline;
+}
+
+#title~p
+{
+    color: red;
+}
+
+article+p
+{
+    text-transform: uppercase;
+}
+
+article>div>p
+{
+    font-style: italic;
+}
+
+a[href ^="https"]
+{
+    color:green;
+}
+
+a[target="_blank"]
+{
+    text-decoration: none;
+}
+
+a[href $="html"]
+{
+    font-size: 8px;
+}
+
+a[href].kfu 
+{
+    font-style: italic;
+}
+
+a[href *="ccsit"]
+{
+    text-transform: uppercase ;
+}
+
+a[href ^="http:"]
+{
+    color:red;
+}
+
+a:visited
+{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+a:active
+{
+    color: orange;
+}
+
+input:required
+{
+    background-color: red;
+    color: white;
+}
+
+input[type="email"]:valid
+{
+    color: green;
+}
+
+input[type="email"]:invalid
+{
+    color: red;
+}
+tr:nth-child(even)
+{
+    background-color: grey;
+}
+
+tr:nth-child(odd)
+{
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + span
+{
+    color: green;
+}
+
+div+p::first-letter
+{
+    font-size: 30px;
+}
+
+div+p::first-line
+{
+    color: green;
+}
+
+body::first-line
+{
+    color: blue;
+}

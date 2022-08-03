@@ -1,0 +1,121 @@
+<!--
+    CHILDREN SELECTORS
+    1. Color all <h2> children (descendents) of <article> as green color
+    2. Underline <h2> which is only direct child of <article>
+    SIBLING SELECTORS
+    3. Color all paragraph siblings of #title to be red color
+    4. Make the paragraph that is immediately after the article as Upper Case 
+    5. Can you make the paragraph on Line 46 as Italics? (Important)
+    ATTRIBUTE SELECTORS
+    6. For all links that are secure (https), change their color to be green
+    7. For all links that are going to open in a new page, remove their underline.
+    8. For all links that have an html file extension in the end, change their font-size to be 8px;
+    9. For all links that have a class of KFU, make them italics
+    10. For all links that have CCSIT in them, make them ALL CAPS 
+    11. For all links that are not secure (http), change their color to be red
+    PSEUDO-CLASS SELECTORS
+    12. When the links are hovered, their background should be black and font color should be white
+    13. When the links are visited, their color should be blue with no underline
+    14. When the links are clicked (active), their color should be orange
+    15. For all required form elements, change the background color to red and font-color to be white
+    16. For the email address, if a valid address is entered, change the font color to green
+    17. For the email address, if an invalid address is entered, change the font color to red
+    18. Color all the even rows in the table with a background color of grey
+    19. Make the text of all the odd rows of the table as BOLD
+    TOUGH PSEUDO-CLASS
+    20. If the radio button for gender is selected, change the color of its label to green
+    PSEUDO-ELEMENT SELECTOR
+    21. For the last paragragh, change the font-size for the first letter (S) to 30px
+    22. For the last paragraph, change the font-color of the the first line to green
+    BONUS
+    23. For the first paragraph on the page, change the font-color to blue.   
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Selectors</title> 
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <p>Warning: This is for those who know basic selectors</p>
+    <h2 id="title">This class is for Advanced Selectors in CSS</h2>
+    <p>I want to be red color</p>
+    <article>
+      <h2>I am a level 2 heading inside an article. I want to be color green. Also I want to be underlined</h2>
+      <div>
+        <h2>I am also a level 2 heading inside the div which is inside the article. I also want to be green</h2>
+        <p>I an just a normal paragraph but I want to be italics</p>
+      </div>
+    </article>
+    <p>I want to be red color too and ALL CAPS</p>
+    <nav>
+       <h3 class="kfu">Some Links:</h3>
+        <ul>
+          <li><a href="https://www.kfu.edu.sa/sites/Home/" class="kfu">King Faisal University</a></li>
+          <li><a href="http://ccsitsys.com/webbased/index.html" class="kfu">Web-based Systems</a></li>
+          <li><a href="https://www.flaticon.com" target="_blank">Free Icons for your designs</a></li>
+          <li><a href="http://ccsitsys.com/advancedweb/" class="kfu">Advanced Web-based Systems</a></li>
+          <li><a href="https://www.freepik.com" target="_blank">Free Vectors for your designs</a></li>
+        </ul>    
+    </nav>
+    <div>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required/>
+            <br/>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"/>
+            <br/>
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender" name="gender" value="male"/><span>Male</span> 
+            <input type="radio" id="gender" name="gender" value="female"/><span>Female</span> 
+            <br/>   
+        </form>
+    </div>
+    <div>
+       <h3>Football Line up</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Height</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8</td>
+              <td>Marco Belinelli</td>
+              <td>G</td>
+              <td>6-5</td>
+              <td>195</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Carlos Boozer</td>
+              <td>F</td>
+              <td>6-9</td>
+              <td>266</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>Jimmy Butler</td>
+              <td>F</td>
+              <td>6-7</td>
+              <td>220</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>Taj Gibson</td>
+              <td>F</td>
+              <td>6-9</td>
+              <td>225</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <p>Selectors are one of, if not, the most important parts of CSS. They shape the cascade and determine how styles are to be applied to elements on a page.Up until recently the focus of CSS never really touched on selectors. Occasionally there would be incremental updates within the selectors specification, but never any real ground breaking improvements. Fortunately, more attention has been given to selectors as of late, taking a look at how to select different types of elements and elements in different states of use. CSS3 brought new selectors, opening a whole new world of opportunities and improvements to existing practices.</p>
+</body>
+</html>
